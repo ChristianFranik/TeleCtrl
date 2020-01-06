@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleCtrl", "TeleCtrl.csproj", "{98C46EE6-E251-4367-B184-343B4D2BD248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98C46EE6-E251-4367-B184-343B4D2BD248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C46EE6-E251-4367-B184-343B4D2BD248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C46EE6-E251-4367-B184-343B4D2BD248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C46EE6-E251-4367-B184-343B4D2BD248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55A27E08-5452-4AC7-AC75-9456DA5EBB8C}
+	EndGlobalSection
+EndGlobal

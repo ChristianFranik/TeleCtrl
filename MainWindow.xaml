@@ -1,0 +1,46 @@
+﻿<Window x:Class="TeleCtrl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeleCtrl"
+        mc:Ignorable="d"
+        Title="TeleCtrl" Height="430" Width="260" Background="Black"
+        Icon="icon.ico">
+    <!--Icon From https://icon-library.net-->
+    <DockPanel LastChildFill="True">
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Name="stsText" />
+            </StatusBarItem>
+        </StatusBar>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Vertical" Focusable="True" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Height="200">
+                    <Label HorizontalAlignment="Center" Foreground="White">Focus-Control</Label>
+                    <Button FontSize="32" Width="110" Height="75" PreviewMouseLeftButtonDown="OnFocusOutButtonDown" PreviewMouseLeftButtonUp="OnFocusOutButtonUp" Margin="5,5,5,5" HorizontalAlignment="Left">OUT</Button>
+                    <Button FontSize="32" Width="110" Height="75" PreviewMouseLeftButtonDown="OnFocusInButtonDown" PreviewMouseLeftButtonUp="OnFocusInButtonUp" Margin="5,5,5,5" HorizontalAlignment="Left">IN</Button>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Focusable="True" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Height="100">
+                    <Label HorizontalAlignment="Center" Foreground="White">Focus-Speed</Label>
+                    <StackPanel Orientation="Horizontal">
+                        <Button PreviewMouseLeftButtonDown="OnFocusSpeedDecreasePress" FontSize="20" Width="40" Height="40" Margin="5,5,5,5" HorizontalAlignment="Left">-</Button>
+                        <TextBlock Width="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Text="{Binding focusSpeed}"></TextBlock>
+                        <Button PreviewMouseLeftButtonDown="OnFocusSpeedIncreasePress" FontSize="20" Width="40" Height="40" Margin="5,5,5,5" HorizontalAlignment="Left">+</Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical" Focusable="True" HorizontalAlignment="Left" Width="120" Height="500" VerticalAlignment="Top" >
+                <Label HorizontalAlignment="Center" Foreground="White">Switch-Control</Label>
+                <ToggleButton Background="Red" FontSize="32" Width="110" Height="75" Unchecked="OnRelay1ButtonUnchecked" Checked="OnRelay1ButtonChecked" Margin="5,5,5,5" HorizontalAlignment="Left">OFF</ToggleButton>
+                <ToggleButton Background="Red" FontSize="32" Width="110" Height="75" Unchecked="OnRelay2ButtonUnchecked" Checked="OnRelay1ButtonChecked" Margin="5,5,5,5" HorizontalAlignment="Left">OFF</ToggleButton>
+                <ToggleButton Background="Red" FontSize="32" Width="110" Height="75" Unchecked="OnRelay3ButtonUnchecked" Checked="OnRelay1ButtonChecked" Margin="5,5,5,5" HorizontalAlignment="Left">OFF</ToggleButton>
+                <ToggleButton Background="Red" FontSize="32" Width="110" Height="75" Unchecked="OnRelay4ButtonUnchecked" Checked="OnRelay1ButtonChecked" Margin="5,5,5,5" HorizontalAlignment="Left">OFF</ToggleButton>
+            </StackPanel>
+        </StackPanel>
+        
+    </DockPanel>
+
+
+</Window>
